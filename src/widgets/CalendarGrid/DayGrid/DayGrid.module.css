@@ -1,0 +1,118 @@
+.grid {
+  display: flex;
+  height: 100vh;
+  background: #fff;
+}
+
+.timeColumn {
+  width: 60px;
+  flex-shrink: 0;
+  border-right: 1px solid #e0e0e0;
+  background: #f8f9fa;
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  height: 1430px;
+}
+
+.timeCell {
+  height: 60px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 4px 8px;
+  color: #70757a;
+  font-size: 12px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dayColumn {
+  flex: 1;
+  overflow: visible;
+  position: relative;
+}
+.dayCell {
+  height: 60px;
+  border-bottom: 1px solid #f0f0f0;
+  position: relative;
+  box-sizing: border-box;
+  background: white;
+}
+
+.dayCell.currentHour {
+  background-color: rgba(255, 235, 59, 0.1);
+}
+
+.event {
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  border-radius: 3px;
+  padding: 0 4px;
+  font-size: 10px;
+  line-height: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  z-index: 1;
+  background-color: rgba(227, 242, 253, 0.9);
+  border-left: 3px solid #2196f3;
+  color: #1976d2;
+  box-shadow: none;
+}
+
+.event:hover {
+  z-index: 2;
+  background-color: #bbdefb;
+}
+
+.event-time {
+  display: none;
+}
+
+.event-title {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .timeColumn {
+    width: 50px;
+  }
+
+  .timeCell,
+  .dayCell {
+    height: 50px;
+  }
+
+  .event {
+    height: auto;
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeColumn {
+    width: 40px;
+    font-size: 10px;
+    padding: 4px;
+  }
+
+  .timeCell,
+  .dayCell {
+    height: 40px;
+  }
+
+  .event {
+    left: 2px;
+    right: 2px;
+    font-size: 8px;
+    padding: 0 2px;
+    border-left-width: 2px;
+  }
+}

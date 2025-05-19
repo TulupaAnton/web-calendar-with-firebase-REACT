@@ -1,0 +1,15 @@
+/* Стили для вертикального скролла */
+::-webkit-scrollbar {
+  width: 8px; /* Ширина скроллбара */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0069d9; /* Цвет ползунка */
+  border-radius: 10px; /* Скругление углов ползунка */
+  border: 2px solid #ffffff; /* Белая рамка вокруг ползунка */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Цвет фона трека */
+  border-radius: 10px; /* Скругление углов трека */
+}

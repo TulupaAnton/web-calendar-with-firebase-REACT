@@ -1,0 +1,37 @@
+/* BurgerMenu.module.css */
+.burgerContainer {
+  position: relative;
+  display: none;
+}
+
+.burgerButton {
+  min-width: 40px;
+  height: 40px;
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  width: 180px;
+  z-index: 1000;
+  margin-top: 5px;
+}
+
+.menuItem {
+  margin-bottom: 5px;
+}
+
+.menuItem:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 480px) {
+  .burgerContainer {
+    display: block;
+  }
+}

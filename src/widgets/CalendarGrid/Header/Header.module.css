@@ -1,0 +1,254 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.dateNavigation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.todayButton {
+  margin-right: 15px;
+}
+
+.navButton {
+  min-width: 36px;
+}
+
+.dateTitle {
+  margin: 0 15px;
+  font-size: 1.2rem;
+  min-width: 250px;
+  text-align: center;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+.viewSwitcher {
+  display: flex;
+  gap: 8px;
+}
+
+.viewButton {
+  display: flex;
+}
+
+.userMenu {
+  position: relative;
+  margin-left: 15px;
+}
+
+.avatarContainer {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #3a86ff;
+}
+
+.avatarPlaceholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #3a86ff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  border: 2px solid #3a86ff;
+}
+
+.dropdownMenu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  width: 250px;
+  z-index: 1000;
+  margin-top: 10px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.dropdownAvatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 2px solid #3a86ff;
+}
+
+.dropdownAvatarPlaceholder {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #3a86ff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+  border: 2px solid #3a86ff;
+}
+
+.userName {
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.userEmail {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+  word-break: break-all;
+}
+
+.signOutButton {
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Мобильное меню */
+.mobileMenuButton {
+  display: none;
+}
+
+.burgerButton {
+  min-width: 40px;
+  height: 40px;
+}
+
+.mobileMenu {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 100%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  width: 180px;
+  z-index: 1000;
+  margin-top: 5px;
+}
+
+.mobileMenuItem {
+  margin-bottom: 5px;
+}
+
+.mobileMenuItem:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 12px;
+    flex-wrap: wrap;
+  }
+
+  .left {
+    order: 1;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .center {
+    order: 3;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .right {
+    order: 2;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .dateTitle {
+    min-width: auto;
+    font-size: 1rem;
+    margin: 0 5px;
+  }
+
+  .todayButton {
+    margin-right: 5px;
+  }
+
+  .navButton {
+    min-width: 30px;
+  }
+
+  .viewSwitcher {
+    display: none;
+  }
+
+  .mobileMenuButton {
+    display: block;
+    margin-left: 10px;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+}

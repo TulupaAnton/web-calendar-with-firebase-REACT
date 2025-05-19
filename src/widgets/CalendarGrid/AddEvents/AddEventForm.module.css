@@ -1,0 +1,51 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem; /* Увеличиваем общий вертикальный отступ */
+  padding: 2rem; /* Увеличиваем внутренние отступы */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.row {
+  display: flex;
+  gap: 2rem; /* Увеличиваем отступ между селектами */
+  margin-bottom: 0;
+}
+
+.row .formGroup {
+  flex: 1;
+  min-width: 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Убираем скролл */
+.content {
+  overflow: visible !important;
+}
+.dateInputContainer {
+  position: relative;
+}
+
+.calendarPopup {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  margin-top: 5px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+}
