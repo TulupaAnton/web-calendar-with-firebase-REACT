@@ -1,15 +1,24 @@
-# React + Vite
+# 📅 Web Calendar App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern calendar web application with day view, built using React, Zustand, Firebase, and React Router. Supports creating, editing, and deleting events and calendars, with dynamic filtering and real-time updates.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📆 Day view with date navigation
+- ✍️ Create, edit, and delete events
+- 🗂️ Support for multiple calendars with visibility toggles
+- 🔐 Firebase Authentication (Sign in / Sign up)
+- 💾 Persistent state with Zustand
+- 📱 Responsive layout
+- 🎨 Custom UI Kit based on Figma design
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** – Component-based UI
+- **Zustand** – Lightweight state management
+- **Firebase** – Auth & Firestore for real-time data
+- **React Router** – Routing and URL navigation
+- **Vite** – Fast dev server and build tool
+- **FSD (Feature-Sliced Design)** – Scalable project architecture
 
-FIREBASSE VERVER:
-https://my-app-a32b6.web.app/
+
